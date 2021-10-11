@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+}
+
+
+.night{
+    width: 70vw;
+    height: 90vh;
+    margin: 5rem auto;
+    background:url("./assets/Img_1.png");
+    background-size: cover;
+    position: relative;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.5);
+    overflow-x: hidden;
+
+}
+
+
+
+
+.surface{
+    width: 500%;
+    height: 140px;
+    display: block;
+    background: url("./assets/Img_02.png");
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+    animation: moveRight 6s linear infinite;
+
+
+}
+
+
+.car{
+    position: absolute;
+    bottom: 9.5%;
+    left: 24%;
+    animation: suspension 2s linear infinite;
+}
+
+.clock{
+    position: inherit;
+    color: whitesmoke;
+    left: 30%;
+    top: 30%;
+}
+
+h1{
+    position: inherit;
+    text-align: center;
+    top: 20%;
+    color: rgb(243, 239, 239)
+}
+
+input{
+    position: inherit;
+    left: 30%;
+    top: 30%;
+    margin-bottom: 15px;
+    height: 30px;
+    width: 150px;
+}
+
+
+.clock >span{
+    background-color: rgb(87, 7, 87);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+.clock >span> span{
+    background-color: rgb(49, 2, 49);
+    padding: 5px;
+    font-size: 2rem;
+    border-radius: 5px;
+    
+}
+
+/* Animation */
+
+@keyframes moveRight {
+    100%{transform: translateX(-2950px)};
+}
+
+
+@keyframes suspension {
+    100%{
+        transform: translateY(-1px);
+    }
+    
+    50%{
+        transform: translateY(2px);
+    }
+
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+
+
+
+
